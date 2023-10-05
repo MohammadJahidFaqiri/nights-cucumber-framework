@@ -29,9 +29,8 @@ public class AccountSteps extends SeleniumUtility {
 
       for (WebElement element : itemPerPageOptions){
           System.out.println(element.getText());
-          if (element.getText().contains(itemPerPage)){
+          if (element.getText().contains(itemPerPage)) {
               element.click();
-
           }
       }
 
