@@ -31,7 +31,6 @@ public class AccountSteps extends SeleniumUtility {
           System.out.println(element.getText());
           if (element.getText().contains(itemPerPage)){
               element.click();
-              System.out.println("This is just a test fro github");
 
           }
       }
