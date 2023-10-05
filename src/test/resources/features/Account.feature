@@ -1,3 +1,4 @@
+@SMOKE
 Feature: Validate Account Table
   @US_09
   Scenario: Validate account table rows
