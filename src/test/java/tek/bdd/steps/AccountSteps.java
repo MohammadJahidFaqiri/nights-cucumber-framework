@@ -13,7 +13,7 @@ import java.util.List;
 public class AccountSteps extends SeleniumUtility {
 
         @Then("Validate accounts table have {int} rows")
-        public void validateAccountTableRows(int expectedRows) {
+        public void validateAccountTableRows(int expectedRows){
             List<WebElement>  tableRowsElements = getListOfElements(AccountsPage.TABLE_ROWS);
             Assert.assertEquals("Validate Account Table row " ,
                     expectedRows,
