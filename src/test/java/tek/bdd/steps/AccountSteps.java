@@ -32,7 +32,7 @@ public class AccountSteps extends SeleniumUtility {
           if (element.getText().contains(itemPerPage)) {
               element.click();
           }
-               System.out.println("This only test for git pull ");
+
       }
 
 
