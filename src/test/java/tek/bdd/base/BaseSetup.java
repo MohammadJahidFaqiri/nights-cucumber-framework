@@ -2,6 +2,7 @@ package tek.bdd.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
@@ -18,7 +19,15 @@ public class BaseSetup {
         //Targeting Chrome Browser.
         //Creating instance of Browser and navigate for Tek insurance APP
 
-        driver = new ChromeDriver();
+        //Add headless option to Chrome browser
+        //Headless mode: Is and option when you run a test
+        // you cannot see the open and close or
+        // other step process with browser in front screen,
+        // it will run in background.
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().window().maximize();
         driver.get(APP_URL);
