@@ -34,12 +34,9 @@
             <version>7.14.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
+
+        <!-- here -->
+        
     </dependencies>
     <build>
         <plugins>
