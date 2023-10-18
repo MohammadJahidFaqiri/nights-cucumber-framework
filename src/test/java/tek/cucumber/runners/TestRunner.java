@@ -17,7 +17,8 @@ import org.junit.runner.RunWith;
 
         plugin = {
 
-                "html:target/html_Reports/report.html" // location of html report
+                "html:target/html_Reports/report.html", // location of html report
+                "json:target/jsonReports/report.json"
         }
 )
 public class TestRunner {
