@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
         dryRun = false, // if true wont run steps just check for un implemented steps
 
         plugin = {
-                "pretty",
-                "html:target/htmlReports/cucumber-pretty.html" // location of html report
+
+                "html:target/html_Reports/report.html" // location of html report
         }
 )
 public class TestRunner {
