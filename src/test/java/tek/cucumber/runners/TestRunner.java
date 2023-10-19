@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features", // location of feature files.
         glue = "tek.bdd.steps", // package for steps definitions
-        tags = "@Smoke",
+        tags = "@US_04",
 
        // dryRun = true, // if true wont run steps just check for un implemented steps
 
